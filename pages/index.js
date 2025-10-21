@@ -1,9 +1,19 @@
 import { filmes } from '../data/filmes';
 
-function Home () {
-    console.log(filmes);
+function CardFilme(){
+    return (
+                            <li key={`card-filme-${filme.id}`}>
+                                <p>Título: {filme.titulo}</p>
+                                <p>Ano: {filme.ano}</p>
+                                <p>Gênero: {filme.genero}</p>
+                                <p>Nota: {filme.nota}</p>
 
-    const primeiroFilme = filmes[0];
+                                <img style={estiloImagem} src={filme.poster}/>
+                            </li>
+                        );
+    
+}
+function Home () {
 
     const estiloImagem = {
         width: "300px"
@@ -16,16 +26,10 @@ function Home () {
             <ul>
                 {
                     filmes.map((filme) => {
-                        return (
-                            <li>
-                                <p>Título: {filme.titulo}</p>
-                                <p>Ano: {filme.ano}</p>
-                                <p>Gênero: {filme.genero}</p>
-                                <p>Nota: {filme.nota}</p>
-
-                                <img style={estiloImagem} src={filme.poster}/>
-                            </li>
-                        );
+                        return(
+                             <CardFilme key=
+                            )
+                        
                     })
                 }
             </ul>
