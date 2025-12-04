@@ -1,0 +1,16 @@
+{
+  "name": "programacaoweb",
+  "version": "1.0.0",
+  "description": "Aprendendo a programar Web",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "Glauber Almeida de Brito - Luis Henrique Nunes Calazans Pozenato",
+  "license": "ISC",
+  "dependencies": {
+    "next": "15.5.4",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  }
+}
